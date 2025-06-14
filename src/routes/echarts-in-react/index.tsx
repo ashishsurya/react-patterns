@@ -20,15 +20,14 @@ export const EchartsInReact = () => {
 						tooltip: {
 							trigger: "axis",
 						},
-						legend: {
-							show: true,
-							width: 0,
-							height: 0,
-							id: "echarts-legend",
-						},
+						// legend: {
+						// 	show: true,
+						// 	width: 0,
+						// 	height: 0,
+						// 	id: "echarts-legend",
+						// },
 						series: [
 							{
-								silent: false,
 								data: [
 									["2025-06-13T18:52:00.000Z", 0],
 									["2025-06-13T18:57:00.000Z", 0],

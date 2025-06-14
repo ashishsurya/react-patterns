@@ -29,7 +29,7 @@ export const EchartsWrapper = (props: EchartsWrapperProps) => {
 			},
 			grid: {
 				top: 40,
-				bottom: 60,
+				bottom: 20,
 				left: 40,
 				right: 20,
 			},
@@ -57,10 +57,10 @@ export const EchartsWrapper = (props: EchartsWrapperProps) => {
 	}, [props.options]);
 
 	return (
-		<div className="w-full h-full border p-2 relative">
-			<div ref={echartsRef} className="w-full h-full" />
+		<div className="w-full h-full border p-2 flex flex-col ">
+			<div ref={echartsRef} className="w-full h-full flex-1" />
 			{isChartReady && (
-				<div className="absolute bottom-4 left-4 ">
+				<div className="p-2">
 					<CustomEchartsLegend chartRef={echartsRef} />
 				</div>
 			)}
